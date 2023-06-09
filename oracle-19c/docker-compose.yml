@@ -1,0 +1,19 @@
+version: '3'
+services:
+    oracle-19c:
+        image: registry.cn-hangzhou.aliyuncs.com/zhuyijun/oracle:19c
+        container_name: oracle-19c
+        privileged: true
+        environment:
+            - TZ=Asia/Shanghai
+            - ORACLE_SID=ORCLCDB
+            - ORACLE_PDB=ORCLPDB1
+            - ORACLE_PWD=123456
+            - ORACLE_EDITION=standard
+            - ORACLE_CHARACTERSET=AL32UTF8
+        restart: always
+        ports:
+            - "1524:1521"
+            - "5504:5500"
+        volumes:
+            - /Users/jxrt/Documents/docker-service/oracle-19c/oradata/:/opt/oracle/oradata/

@@ -1,0 +1,60 @@
+# system ignore
+.DS_Store
+Thumbs.db
+
+# maven ignore
+target
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+!.mvn/wrapper/maven-wrapper.jar
+
+# sts ignore
+.apt_generated
+.classpath
+.factorypath
+.settings
+.springBeans
+.project
+
+# idea ignore
+.idea
+*.iws
+*.iml
+*.ipr
+
+## netbeans ignore
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+data/
+oradata/
+database/
+k8s/
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# bin ignore
+bin
+
+# logs ignore
+logs
+
+# nodejs ignore
+node_modules
+!/src/main/resources/static/build/default.min.css
+!/src/main/resources/static/build/default.min.js
+!/src/main/resources/static/build/template.js
+!/src/main/resources/static/js/build/template.js
+BizWorkflowController.java
+ProcessInstanceResponseVO.java

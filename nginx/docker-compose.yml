@@ -1,0 +1,18 @@
+version: "3"
+services:
+  nginx-02:
+   #我这里是内网镜像，替换成你可用的镜像
+    image: "nginx"
+    ports:
+      - 80:80
+    volumes:
+      - ./conf:/etc/nginx/conf.d
+      - ./build:/usr/share/nginx/html
+      - ./log:/nginx/log
+      - /Users/jxrt/IdeaProjects/scf-server-supernet:/usr/share/nginx/file/
+    restart: always
+
+# networks:
+#   default:
+#     external:
+#       name: minikube
