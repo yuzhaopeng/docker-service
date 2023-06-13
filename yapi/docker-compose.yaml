@@ -9,6 +9,7 @@ services:
       - LOG_PATH=/tmp/yapi.log
       - HOME=/home
       - PORT=3000
+      # admin_password=123456
       - ADMIN_EMAIL=test@test.com
       - DB_SERVER=mongo
       - DB_NAME=yapi
